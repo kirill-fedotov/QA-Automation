@@ -4,9 +4,10 @@ Prerequisites
 
 Before starting, make sure you have the following software installed on your machine:
 
-   Node.js
+   - Node.js
    
-   npm
+   - npm
+
 
 Setup
 
