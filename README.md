@@ -23,18 +23,12 @@ Setup
 
     npm install cypress mochawesome --save-dev
 
-4. Update your cypress.config.js file with the following scripts:
-
-    module.exports = defineConfig({
-        reporter: 'mochawesome',
-    })
-
 Running Tests
 
-5. Start the Cypress Test Runner.
+4. Start the Cypress Test Runner.
 
     node_modules\.bin\cypress run --reporter mochawesome
 
 This will merge all the Mochawesome JSON reports in the mochawesome-report folder and generate an HTML report in the same folder.
 
-6. Open the mochawesome-report/mochawesome.html file in your web browser to view the report.
+5. Open the mochawesome-report/mochawesome.html file in your web browser to view the report.

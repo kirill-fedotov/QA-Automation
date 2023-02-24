@@ -3,10 +3,8 @@
     "",
     "\\cypress",
     "\\cypress\\e2e",
-    "\\cypress\\e2e\\addItemsToTheBasket",
-    "\\cypress\\e2e\\price-filter",
-    "\\cypress\\support",
-    "\\cypress\\support\\pages"
+    "\\cypress\\e2e\\test"
   ],
+  "SelectedNode": "\\cypress.config.js",
   "PreviewInSolutionExplorer": false
 }
