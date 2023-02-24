@@ -4,18 +4,18 @@ Prerequisites
 
 Before starting, make sure you have the following software installed on your machine:
 
-    Node.js
-    npm
+   Node.js
+   npm
 
 Setup
 
 1. Clone the repository that contains your Cypress tests.
 
-    git clone <repository-url>
+    git clone repository-url
 
 2. Navigate to the root directory of the repository.
 
-    cd <repository-name>
+    cd repository-name
 
 3. Install Cypress and Mochawesome.
 
