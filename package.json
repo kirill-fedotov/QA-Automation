@@ -1,0 +1,23 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirill-fedotov/QA-Automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirill-fedotov/QA-Automation/issues"
+  },
+  "homepage": "https://github.com/kirill-fedotov/QA-Automation#readme",
+  "devDependencies": {
+    "cypress": "^12.6.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\cypress",
+    "\\cypress\\e2e",
+    "\\cypress\\e2e\\addItemsToTheBasket",
+    "\\cypress\\e2e\\price-filter",
+    "\\cypress\\support",
+    "\\cypress\\support\\pages"
+  ],
+  "PreviewInSolutionExplorer": false
+}
