@@ -7,6 +7,7 @@ Before starting, make sure you have the following software installed on your mac
    - Node.js
    
    - npm
+
    
 Setup
 
