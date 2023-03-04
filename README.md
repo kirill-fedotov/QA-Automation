@@ -1,34 +1,62 @@
-# QA-Automation tests for https://epicentrk.ua/
+ QA-Automation tests for https://epicentrk.ua/
 
-Prerequisites
+ Prerequisites
 
 Before starting, make sure you have the following software installed on your machine:
 
-   - Node.js
-   
-   - npm
+    Node.js
 
-   
+    npm
+
 Setup
 
-1. Clone the repository that contains your Cypress tests.
+   1. Clone the repository to VScode
 
-    git clone repository-url
+    https://github.com/kirill-fedotov/QA-Automation.git
 
-2. Navigate to the root directory of the repository.
+   2. Navigate to the root directory
 
-    cd repository-name
+    cd QA-Automation
 
-3. Install Cypress and Mochawesome.
+   3. Install Cypress
 
-    npm install cypress mochawesome --save-dev
+    npm install cypress --save-dev
 
-Running Tests
+ Running Tests
 
-4. Start the Cypress Test Runner.
+   4. Start the Cypress Test Runner
 
-    node_modules\.bin\cypress run --reporter mochawesome
+    node_modules\.bin\cypress open
 
-This will merge all the Mochawesome JSON reports in the mochawesome-report folder and generate an HTML report in the same folder.
+ Setup "cypress-mochawesome-reporter"
 
-5. Open the mochawesome-report/mochawesome.html file in your web browser to view the report.
+   5. Install cypress-mochawesome-reporter
+
+    npm i --save-dev cypress-mochawesome-reporter
+
+   6. Change cypress reporter & setup hooks
+
+   Edit config file (cypress.config.js by default)
+
+    const { defineConfig } = require('cypress');
+
+    module.exports = defineConfig({
+      reporter: 'cypress-mochawesome-reporter',
+      e2e: {
+        setupNodeEvents(on, config) {
+          require('cypress-mochawesome-reporter/plugin')(on);
+        },
+      },
+    });
+
+   7. Add to cypress/support/e2e.js
+
+    import 'cypress-mochawesome-reporter/register';
+
+   8. Run cypress
+
+    npx cypress run --spec cypress/e2e/signup_login.cy.js
+
+   9. Run cypress with specific browser and in visible mode
+
+    npx cypress run --spec cypress/e2e/signup_login.cy.js --browser chrome --headed

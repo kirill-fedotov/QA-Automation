@@ -18,6 +18,7 @@
   "homepage": "https://github.com/kirill-fedotov/QA-Automation#readme",
   "devDependencies": {
     "cypress": "^12.6.0",
+    "cypress-mochawesome-reporter": "^3.3.0",
     "cypress-xpath": "^2.0.1"
   }
 }

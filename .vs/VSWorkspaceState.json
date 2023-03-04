@@ -3,8 +3,10 @@
     "",
     "\\cypress",
     "\\cypress\\e2e",
-    "\\cypress\\e2e\\test"
+    "\\cypress\\e2e\\test",
+    "\\cypress\\reports\\html",
+    "\\cypress\\support\\pages"
   ],
-  "SelectedNode": "\\cypress.config.js",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
